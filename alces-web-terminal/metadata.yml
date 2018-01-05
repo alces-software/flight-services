@@ -35,7 +35,7 @@ install:
         cp "${service_root}"/etc/alces-flight-www/alces-web-terminal.conf.tpl \
           "${cw_ROOT}"/etc/alces-flight-www/server-https.d/alces-web-terminal.conf
     fi
-    if handler_is_enabled cluster-www; then
+    if handler_is_enabled flight-www; then
         "${cw_ROOT}"/libexec/share/www-add-attributes \
                     "${service_root}"/var/alces-flight-www/web-terminal/attributes.json.tpl
     fi
